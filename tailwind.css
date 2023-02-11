@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  .h1 {
+    @apply text-5xl md:text-7xl;
+  }
+
+  h2,
+  .h2 {
+    @apply text-xl md:text-2xl xl:text-3xl font-light mb-8 max-w-5xl;
+  }
+
+  h3,
+  .h3 {
+    @apply text-xl md:text-2xl xl:text-3xl font-light mb-8 max-w-5xl;
+  }
+
+  h4,
+  .h4 {
+    @apply text-xl;
+  }
+
+  p,
+  .p {
+    @apply text-xl;
+  }
+
+  .container {
+    @apply px-8;
+  }
+}
+
+@layer components {
+  .main_nav a {
+    @apply uppercase text-sm font-medium tracking-wide;
+  }
+}
