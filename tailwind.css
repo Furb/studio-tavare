@@ -37,4 +37,8 @@
   .main_nav a {
     @apply uppercase text-sm font-medium tracking-wide;
   }
+
+  .label {
+    @apply font-light text-base pt-1;
+  }
 }
