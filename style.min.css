@@ -394,7 +394,6 @@ video {
   max-width: 64rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  font-weight: 300;
 }
 
   @media (min-width: 768px) {
@@ -452,15 +451,7 @@ video {
   .p {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-  @media (min-width: 768px) {
-
-  p,
-  .p {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
+  font-weight: 300;
 }
 
   .container {
@@ -738,7 +729,6 @@ video {
 .opacity-25 {
   opacity: 0.25;
 }
-
 @media (min-width: 640px) {
 
   .sm\:mb-2 {
@@ -761,7 +751,6 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:mb-0 {
@@ -792,7 +781,6 @@ video {
     gap: 2rem;
   }
 }
-
 @media (min-width: 1280px) {
 
   .xl\:grid-cols-3 {
