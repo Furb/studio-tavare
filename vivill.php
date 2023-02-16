@@ -11,7 +11,7 @@ Template Name: Vi vill
    
    <h2 class="mb-12"><?php the_field('underoverskrift'); ?></h2> 
 
-   <?php if( get_field('image') ): ?>
+   <?php if( get_field('bilde_vi_vill') ): ?>
     
 
 
