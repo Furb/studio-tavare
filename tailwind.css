@@ -10,7 +10,7 @@
 
   h2,
   .h2 {
-    @apply text-xl md:text-2xl xl:text-3xl mb-8 max-w-5xl;
+    @apply text-xl md:text-2xl xl:text-3xl mb-8 max-w-5xl font-body;
   }
 
   h3,
