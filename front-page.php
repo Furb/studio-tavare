@@ -8,7 +8,7 @@ Template Name: Homepage
 <section id="main" class="min-h-[50vh]">
    <div class="container mt-16 flex justify-between items-center mx-auto">
     <div class="flex flex-col lg:grid lg:grid-cols-4 gap-8 xl:gap-12">
-        <div class="col-span-2"><a href="/om-oss"><img src="/wp-content/uploads/2023/02/studio_tavare_om-oss.jpg" alt=""></a></div><!-- /.1 -->
+        <div class="col-span-2"><a href="/vi-vill"><img src="/wp-content/uploads/2023/02/studio_tavare_om-oss.jpg" alt=""></a></div><!-- /.1 -->
          <div class="flex items-end"><img src="/wp-content/uploads/2023/02/logo_studio_tavare_moerk.png" alt=""></div><!-- /.2 -->
           <div class="3"><img src="/wp-content/uploads/2023/02/05_naernatur.jpg" alt=""><p class="label">Nærnatur</p><!-- /.label --></div><!-- /.3 -->
             <div class="flex items-center"><h3 class="pt-8 pr-8"><?php the_field('forside_tekst'); ?></h3></div><!-- /.4 -->
