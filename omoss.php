@@ -6,9 +6,35 @@ Template Name: Om oss
 ?>
 <?php get_header(); ?>
 <section id="main" class="min-h-[50vh]">
-   <div class="container mt-16 justify-between items-center mx-auto">
+   <div class="container mt-16 mx-auto">
+    <div class="flex flex-col lg:flex-row justify-between">
+
+       <div>
+        <h2 class="mb-12"><?php the_field('vi_er_undero_overskrift'); ?></h2>
+         <?php if( get_field('portrett_bilde') ): ?>
+    
+
+
+   <img class="lg:hidden" src="<?php the_field('portrett_bilde'); ?>" alt="">
+   <?php endif; ?>
+       
+   <p class="mb-8"><?php the_field('vi_er_hovedtekst'); ?></p>
+
+    </div>
+
+     <?php if( get_field('portrett_bilde') ): ?>
+    
+
+
+   <img class="hidden lg:block" src="<?php the_field('portrett_bilde'); ?>" alt="">
+   <?php endif; ?>
+
+    
+
+    </div><!-- /.flex -->
+ 
    
-   <h2 class="mb-12">Studio Tavare har erfaring fra oppdrag som omfatter naturområder, byplanlegging, nye byrom, gårdsrom, torg, takterrasser, parker og gater. Vi har jobbet på prosjekter med stor innflytelse på, og betydning for byliv og naturmangfold.</h2> <h2 class="mb-12">Vi har særlig kompetanse på samarbeid med offentlige myndigheter i forbindelse med utarbeiding av byggeplan for arealer med vernehensyn.</h2> <h2 class=" mb-24">Som del av vår virksomhet underviser vi i landskapsarkitektur ved Arkitektur- og designhøgskolen i Oslo (AHO).</h2>
+   
 
    
  
