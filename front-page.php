@@ -7,7 +7,7 @@ Template Name: Homepage
 <?php get_header(); ?>
 <section id="main" class="min-h-[50vh]">
    <div class="container mt-16 flex justify-between items-center mx-auto">
-    <div class="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 xl:gap-12">
+    <div class="hidden lg:grid lg:grid-cols-4 lg:gap-8 xl:gap-12">
         <div class="col-span-2"><a href="/om-oss"><img src="/wp-content/uploads/2023/02/studio_tavare_om-oss.jpg" alt=""></a></div><!-- /.1 -->
          <div class="flex items-end"><img src="/wp-content/uploads/2023/02/logo_studio_tavare_moerk.png" alt=""></div><!-- /.2 -->
           <div class="3"><img src="/wp-content/uploads/2023/02/05_naernatur.jpg" alt=""><p class="label">Nærnatur</p><!-- /.label --></div><!-- /.3 -->
@@ -21,7 +21,7 @@ Template Name: Homepage
              <div class="col-span-2"><img src="/wp-content/uploads/2023/02/12_Sirkulaer_materialbruk.jpg" alt=""><p class="label">Sirkulær materialbruk</p><!-- /.label --></div><!-- /.10 -->
            
 </div><!-- /.flex flex-wrap md:flex-nowrap -->
-<div class="flex flex-col gap-8 md:hidden">
+<div class="flex flex-col gap-8 lg:hidden">
     <div><img src="/wp-content/uploads/2023/02/logo_studio_tavare_moerk.png" alt=""></div><!-- /.2 -->
     <div class="flex items-center"><h3 class="pt-8">Studio Tavare arbeider i krysningspunktet mellom kunst, landskapsarkitektur og urbanisme.</h3></div><!-- /.4 -->
         <div><img src="/wp-content/uploads/2023/02/studio_tavare_om-oss.jpg" alt=""></div><!-- /.1 -->
