@@ -742,7 +742,6 @@ video {
 .opacity-25 {
   opacity: 0.25;
 }
-
 @media (min-width: 640px) {
 
   .sm\:mb-2 {
@@ -761,7 +760,6 @@ video {
     display: grid;
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:mb-0 {
@@ -788,7 +786,6 @@ video {
     flex-wrap: nowrap;
   }
 }
-
 @media (min-width: 1024px) {
 
   .lg\:block {
@@ -827,7 +824,6 @@ video {
     gap: 4rem;
   }
 }
-
 @media (min-width: 1280px) {
 
   .xl\:grid-cols-3 {
