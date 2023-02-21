@@ -10,7 +10,7 @@
 
   h2,
   .h2 {
-    @apply text-xl md:text-2xl xl:text-3xl mb-8 max-w-5xl font-body;
+    @apply text-xl md:text-2xl xl:text-3xl mb-8 max-w-3xl font-body;
   }
 
   h3,
@@ -25,7 +25,7 @@
 
   p,
   .p {
-    @apply text-base font-light;
+    @apply text-base font-light max-w-3xl;
   }
 
   .container {

@@ -391,7 +391,7 @@ video {
   h2,
   .h2 {
   margin-bottom: 2rem;
-  max-width: 64rem;
+  max-width: 48rem;
   font-family: 'Roboto', sans-serif;;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -450,6 +450,7 @@ video {
 
   p,
   .p {
+  max-width: 48rem;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 300;
@@ -745,11 +746,9 @@ video {
 .opacity-25 {
   opacity: 0.25;
 }
-
 .group:hover .group-hover\:underline {
   text-decoration-line: underline;
 }
-
 @media (min-width: 640px) {
 
   .sm\:mb-2 {
@@ -768,7 +767,6 @@ video {
     display: grid;
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:mb-0 {
@@ -795,7 +793,6 @@ video {
     flex-wrap: nowrap;
   }
 }
-
 @media (min-width: 1024px) {
 
   .lg\:block {
@@ -834,7 +831,6 @@ video {
     gap: 4rem;
   }
 }
-
 @media (min-width: 1280px) {
 
   .xl\:grid-cols-3 {
