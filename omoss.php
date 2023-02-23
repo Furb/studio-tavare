@@ -22,41 +22,37 @@ Template Name: Om oss
 
     </div>
 
-     <?php if( get_field('portrett_bilde') ): ?>
-    
-
+   <?php if( get_field('portrett_bilde') ): ?>
 
    <img class="hidden lg:block lg:w-2/3" src="<?php the_field('portrett_bilde'); ?>" alt="">
    <?php endif; ?>
 
-    
-
+   
     </div><!-- /.flex -->
  
    
+<div id="profiler" class="sm:grid grid-cols-12 gap-8">
+   <img class="col-span-full lg:col-span-7 lg:col-start-6 mb-8" src="/wp-content/uploads/2023/02/studiotavare-1-scaled-1.jpg" alt="">
 
+  <p class="sm:col-span-6 lg:col-span-4 lg:col-start-4"><?php the_field('portrett_tekst_kjersti'); ?></p>
+   <div class="sm:col-span-6 lg:col-span-4 pt-24"><p><?php the_field('portrett_tekst_sunniva'); ?></p>
+</div><!-- /grid -->
    
+
+
  
-   <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 mb-24">
-<div class="max-w-2xl">
 
-      <img src="/wp-content/uploads/2023/02/kjersti.jpg" alt="Kjersti Bjerke">
-      </div><!-- /.img-box -->
-    <div class="flex items-center"><p><?php the_field('portrett_tekst_kjersti'); ?></p></div>
+ </div><!-- /.flex-initail -->
+ <div class="grid col-span-2">
 
-<div class="max-w-2xl">
-   <img src="/wp-content/uploads/2023/02/sunniva.jpg" alt="Sunniva Førland">
+ 
+ 
 
-</div><!-- /.img-box -->
+ </div><!-- /.grid-span-2 -->
+ </div>
+  
 
-
-<div class="flex items-center"><p><?php the_field('portrett_tekst_sunniva'); ?></p></div><!-- /.flex items-center -->
-
-
-
-
-
-   </div><!-- /.grid -->   
+</div><!-- /.grid -->
 
 
 
