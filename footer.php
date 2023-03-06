@@ -42,6 +42,8 @@
 
 
     </div><!-- /.container -->
+
+    <?php wp_footer(); ?>
    
 </footer>
 
