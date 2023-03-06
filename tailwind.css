@@ -41,4 +41,12 @@
   .label {
     @apply font-light text-base pt-1;
   }
+
+  .mobile_nav li {
+    @apply border-b pb-4;
+  }
+
+  .mobile_nav a {
+    @apply uppercase text-sm font-medium tracking-wide;
+  }
 }

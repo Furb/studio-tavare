@@ -45,20 +45,18 @@ add_action('wp_enqueue_scripts', 'custom_fonts');
 
 
 /* ==========================================================================
-Link til styles & tailwind
+Link til styles & tailwind & scripts
 ========================================================================== */
 
-function theme_styles()
+function tavare_scripts()
 {
 
-    add_action('wp_enqueue_scripts', function () {
-        wp_enqueue_style('style.css',  get_stylesheet_uri() . '/style.min.css');
-    });
+     wp_enqueue_style('tavare-style',  get_stylesheet_uri() . '/style.min.css');
+     wp_enqueue_script( 'tavare-js', get_template_directory_uri() . '/js/tavare.js', array(), null, true );
 }
 
-add_action('wp_enqueue_scripts', 'theme_styles');
+add_action('wp_enqueue_scripts', 'tavare_scripts');
 
 
-/* ==========================================================================
-Widgets
-========================================================================== */
+
+
