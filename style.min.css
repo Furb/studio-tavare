@@ -787,11 +787,9 @@ video {
 .opacity-25 {
   opacity: 0.25;
 }
-
 .group:hover .group-hover\:underline {
   text-decoration-line: underline;
 }
-
 @media (min-width: 640px) {
 
   .sm\:col-span-6 {
@@ -818,15 +816,10 @@ video {
     width: 25%;
   }
 
-  .sm\:w-2\/3 {
-    width: 66.666667%;
-  }
-
   .sm\:w-3\/4 {
     width: 75%;
   }
 }
-
 @media (min-width: 768px) {
 
   .md\:mb-0 {
@@ -853,7 +846,6 @@ video {
     flex-wrap: nowrap;
   }
 }
-
 @media (min-width: 1024px) {
 
   .lg\:col-span-4 {
@@ -900,7 +892,6 @@ video {
     flex-direction: row;
   }
 }
-
 @media (min-width: 1280px) {
 
   .xl\:grid-cols-3 {
