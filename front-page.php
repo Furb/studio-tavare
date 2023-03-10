@@ -7,11 +7,11 @@ Template Name: Homepage
 <?php get_header(); ?>
 <section id="main" class="min-h-[50vh]">
    <div class="container mt-16 flex justify-between items-center mx-auto">
-    <div class="flex flex-col lg:grid lg:grid-cols-12 gap-8 xl:gap-12">
+    <div class="flex flex-col gap-8 | sm:grid sm:grid-cols-2 | lg:grid-cols-12 | xl:gap-12">
 
     
   
-        <div id="card_01 omOss" class="col-span-4 group"><a href="/vi-er"><?php 
+        <div id="card_01 omOss" class="col-span-4 group | lg:mt-32"><a href="/vi-er"><?php 
 
         // don't forget to replace 'image' with your field name
 $omOss = get_field('bilde_1');
@@ -26,7 +26,7 @@ if ($omOss) {
     ?><p class="label group-hover:underline underline-offset-2">Vi er</p></a></div><!-- /.1 -->
 
 
-         <div id="card_02 naerNatur" class="col-span-3 col-start-10 group"><a href="/vi-vil"><?php 
+         <div id="card_02 naerNatur" class=" | col-span-3 col-start-10 group | lg:"><a href="/vi-vil"><?php 
 
         // don't forget to replace 'image' with your field name
 $naerNatur = get_field('bilde_3');
@@ -39,6 +39,8 @@ if ($naerNatur) {
 }
     
     ?><p class="label group-hover:underline underline-offset-2">Nærnatur</p></a><!-- /.label --></div><!-- /.2 -->
+         
+         
          <div id="card_03 process" class="col-start-4 col-span-2 group"><a href="/vi-vil"><?php 
 
         // don't forget to replace 'image' with your field name
@@ -52,7 +54,9 @@ if ($prosess) {
 }
     
     ?><p class="label group-hover:underline underline-offset-2">Prosess</p></a><!-- /.label --></div><!-- /.3 -->
-         <div id="card_04 logo" class="col-start-7 col-span-5 flex"><?php 
+         
+         
+         <div id="card_04 logo" class="col-start-7 col-span-5 flex | lg:-mt-32"><?php 
 
         // don't forget to replace 'image' with your field name
 $logo = get_field('bilde_2');
@@ -68,6 +72,9 @@ if ($logo) {
          
          
             <div id="card_05 intro" class="col-span-6 flex items-center"><h3 class="pt-8 pr-8"><?php the_field('forside_tekst'); ?></h3></div><!-- /.5 -->
+            
+            
+            
             <div id="card_06 byKulturArv" class="col-start-8 col-span-4 group"><a href="/vi-vil"><?php 
 
         // don't forget to replace 'image' with your field name
@@ -98,7 +105,9 @@ if ($byLiv) {
 }
     
     ?><p class="label group-hover:underline underline-offset-2">Byliv</p></a><!-- /.label --></div><!-- /.7 -->
-            <div id="card_08" class="col-start-7 col-span-3"><?php 
+           
+           
+           <div id="card_08" class="col-start-7 col-span-3 | lg:mt-32"><?php 
 
         // don't forget to replace 'image' with your field name
 $munch = get_field('bilde_5');
@@ -126,7 +135,7 @@ if ($formidling) {
     
     ?><p class="label group-hover:underline underline-offset-2">Formidling</p></a><!-- /.label --></div><!-- /.10 -->
 
-    <div id="card_11 sirkulaer" class="col-start-1 col-span-2 group"><a href="/vi-vil"><?php 
+    <div id="card_11 sirkulaer" class="col-start-1 col-span-2 group | lg:place-self-end"><a href="/vi-vil"><?php 
 
         // don't forget to replace 'image' with your field name
 $sirkulaer = get_field('bilde_10');
