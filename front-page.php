@@ -18,6 +18,7 @@ $omOss = get_field('bilde_1');
 // can be one of the built-in sizes ('thumbnail', 'medium', 'large', 'full' or a custom size)
 $size = 'full';
 
+
 if ($omOss) {
     // creates the img tag
     echo wp_get_attachment_image($omOss, $size);
@@ -26,7 +27,7 @@ if ($omOss) {
     ?><p class="label group-hover:underline underline-offset-2">Vi er</p></a></div><!-- /.1 -->
 
 
-         <div id="card_02 naerNatur" class=" | col-span-3 col-start-10 group | lg:"><a href="/vi-vil"><?php 
+         <div id="card_02 naerNatur" class=" | col-span-3 col-start-10 group"><a href="/vi-vil"><?php 
 
         // don't forget to replace 'image' with your field name
 $naerNatur = get_field('bilde_3');
@@ -41,7 +42,7 @@ if ($naerNatur) {
     ?><p class="label group-hover:underline underline-offset-2">Nærnatur</p></a><!-- /.label --></div><!-- /.2 -->
          
          
-         <div id="card_03 process" class="col-start-4 col-span-2 group"><a href="/vi-vil"><?php 
+         <div id="card_03 process" class="col-start-4 col-span-2 group | lg:place-self-end"><a href="/vi-vil"><?php 
 
         // don't forget to replace 'image' with your field name
 $prosess = get_field('bilde_6');

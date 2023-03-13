@@ -18,7 +18,7 @@
 <body class="min-h-screen bg-white">
 
     <header class="flex justify-between py-6 items-center container mx-auto">
-      <a href="<?php echo get_home_url(); ?>" class="logo uppercase"><img class="h-4" src="/wp-content/uploads/2023/02/st-500.svg" alt="studio tavara"></a><!-- /.logo -->
+      <a href="<?php echo get_home_url(); ?>" class="logo uppercase"><img class=" h-2 | sm:h-3 |md:h-4" src="/wp-content/uploads/2023/02/st-500.svg" alt="studio tavara"></a><!-- /.logo -->
 
 
       <?php
