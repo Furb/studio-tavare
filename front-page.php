@@ -136,7 +136,7 @@ if ($formidling) {
     
     ?><p class="label group-hover:underline underline-offset-2">Formidling</p></a><!-- /.label --></div><!-- /.10 -->
 
-    <div id="card_11 sirkulaer" class="col-start-1 col-span-2 group | lg:place-self-end"><a href="/vi-vil"><?php 
+    <div id="card_11 sirkulaer" class="col-start-1 col-span-2 group | lg:place-self-end lg:mt-80"><a href="/vi-vil"><?php 
 
         // don't forget to replace 'image' with your field name
 $sirkulaer = get_field('bilde_10');
@@ -155,7 +155,7 @@ if ($sirkulaer) {
 
     
            
-            <div id="card_10 landForstaa" class="col-start-4 col-span-3 group"><a href="/vi-vil"><?php 
+            <div id="card_10 landForstaa" class="col-start-4 col-span-3 group | lg:mt-32"><a href="/vi-vil"><?php 
 
         // don't forget to replace 'image' with your field name
 $forstaa = get_field('bilde_9');

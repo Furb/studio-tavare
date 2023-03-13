@@ -916,6 +916,18 @@ video {
     margin-top: -8rem;
   }
 
+  .lg\:mt-64 {
+    margin-top: 16rem;
+  }
+
+  .lg\:mt-72 {
+    margin-top: 18rem;
+  }
+
+  .lg\:mt-80 {
+    margin-top: 20rem;
+  }
+
   .lg\:block {
     display: block;
   }
