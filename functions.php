@@ -26,11 +26,29 @@ if (!function_exists('base_setup')) {
             )
         );
 
+        /*widgets*/
+        register_sidebar (
+            array(
+                'before_title' => '',
+                'after_title' => '',
+                'before_widget' => '',
+                'after_widget' => '',
+
+            ),
+
+            array (
+                'name' => 'Adresse',
+                'id' => 'adresse',
+                'description' => 'Adresse widget'
+
+            )
+        )
+
         
     }
 }
 
-add_action('after_setup_theme', 'base_setup');
+add_action('after_setup_theme', 'widgets_init', 'base_setup');
 
 
 /* ==========================================================================
