@@ -10,7 +10,8 @@
         <p class="font-bold mb-4"><?php echo esc_html(get_theme_mod('address_title_setting', 'Default Title')); ?></p><!-- /.font-700 -->
 
          <p class="mb-8 sm:mb-4 font-light">
-         <?php echo wp_kses_post(get_theme_mod('address_content_setting', '')); ?>
+
+         <?php echo wp_kses_post(nl2br(get_theme_mod('address_content_setting', ''))); ?>
 
         </p>
 
