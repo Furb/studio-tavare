@@ -26,12 +26,6 @@ if (!function_exists('base_setup')) {
             )
         );
 
-        register_widget($addressWidget)
-        {
-            global $wp_widget_factory;
-
-            $wp_widget_factory->register($adressWidget);
-        }
         
     }
 }
