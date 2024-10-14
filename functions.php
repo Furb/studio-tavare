@@ -88,27 +88,61 @@ add_action('wp_enqueue_scripts', 'tavare_scripts');
 Add Address Customizer Setting
 ========================================================================== */
 
+if (class_exists('WP_Customize_Control')) {
+    class Tavare_Customize_WYSIWYG_Control extends WP_Customize_Control {
+        public $type = 'wysiwyg';
+        
+        public function render_content() {
+            // Settings for the WYSIWYG editor
+            $settings = array(
+                'textarea_name' => $this->id,
+                'media_buttons' => true, // Show the media button for uploading images
+                'textarea_rows' => 10,    // Set the height of the editor
+            );
+            ?>
+            <label>
+                <span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
+                <?php wp_editor($this->value(), $this->id, $settings); ?>
+            </label>
+            <?php
+        }
+    }
+}
+
 function tavare_customize_register($wp_customize) {
     
-    // Add a section in the customizer for the address
+    // Add a section for the Address
     $wp_customize->add_section('address_section', array(
-        'title'      => __('Addresse', 'tavare'),
-        'priority'   => 30,
+        'title'    => __('Adresseinnstillinger', 'tavare'), // Translated: Address Settings
+        'priority' => 30,
     ));
 
-    // Add the setting for the address field (with sanitization)
-    $wp_customize->add_setting('address_setting', array(
+    // Add a setting for the Title
+    $wp_customize->add_setting('address_title_setting', array(
+        'default'           => 'Studio Tavare AS', // Default title
+        'sanitize_callback' => 'sanitize_text_field', // Sanitize the title input
+    ));
+
+    // Add the control for Title
+    $wp_customize->add_control('address_title_setting', array(
+        'label'    => __('Tittel', 'tavare'), // Translated: Title
+        'section'  => 'address_section',
+        'settings' => 'address_title_setting',
+        'type'     => 'text', // Input field for the title
+    ));
+
+    // Add a setting for the Address WYSIWYG field
+    $wp_customize->add_setting('address_content_setting', array(
         'default'           => '',
         'sanitize_callback' => 'wp_kses_post', // Allows basic HTML like <p>, <br>, etc.
     ));
 
-    // Add the control (input field) for the address
-    $wp_customize->add_control('address_setting', array(
-        'label'    => __('Enter Address', 'tavare'),
+    // Add the WYSIWYG editor control for Address
+    $wp_customize->add_control(new Tavare_Customize_WYSIWYG_Control($wp_customize, 'address_content_setting', array(
+        'label'    => __('Skriv inn adresseinnhold', 'tavare'), // Translated: Enter Address Content
         'section'  => 'address_section',
-        'settings' => 'address_setting',
-        'type'     => 'textarea', // This will create a textarea in the customizer
-    ));
+        'settings' => 'address_content_setting',
+    )));
 }
 
 add_action('customize_register', 'tavare_customize_register');
