@@ -25,30 +25,34 @@ if (!function_exists('base_setup')) {
                 'mobil_menu' => __('Mobile Menu'),
             )
         );
-
-        /*widgets*/
-        register_sidebar (
-            array(
-                'before_title' => '',
-                'after_title' => '',
-                'before_widget' => '',
-                'after_widget' => '',
-
-            ),
-
-            array (
-                'name' => 'Adresse',
-                'id' => 'adresse',
-                'description' => 'Adresse widget'
-
-            )
-        )
-
         
     }
 }
 
-add_action('after_setup_theme', 'widgets_init', 'base_setup');
+add_action('after_setup_theme', 'base_setup');
+
+
+/* ==========================================================================
+Register Sidebar widget
+========================================================================== */
+
+function tavare_widgets_init() {
+
+   
+    register_sidebar(
+        array(
+            'name'          => 'Adresse', 
+            'id'            => 'adresse', 
+            'description'   => 'Adresse widget',
+            'before_title'  => '',
+            'after_title'   => '',
+            'before_widget' => '',
+            'after_widget'  => '',
+        )
+    );
+}
+
+add_action('widgets_init', 'tavare_widgets_init');
 
 
 /* ==========================================================================
