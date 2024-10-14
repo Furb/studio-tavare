@@ -82,11 +82,6 @@ function tavare_scripts()
 add_action('wp_enqueue_scripts', 'tavare_scripts');
 
 
-
-
-/* ==========================================================================
-Add Address Customizer Setting
-========================================================================== */
 /* ==========================================================================
 Add Title and Address Customizer Settings
 ========================================================================== */
@@ -124,7 +119,7 @@ function tavare_customize_register($wp_customize) {
         'label'    => __('Adresseinnhold', 'tavare'), // Address Content
         'section'  => 'address_section',
         'settings' => 'address_content_setting',
-        'type'     => 'textarea', // Change to textarea
+        'type'     => 'textarea', // Use textarea
     ));
 }
 
@@ -136,8 +131,7 @@ add_action('customize_save_after', 'customize_save_after');
 function customize_save_after() {
     if (isset($_POST['address_content_setting'])) {
         // Sanitize and save the content
-        set_theme_mod('address_content_setting', sanitize_textarea_field($_POST['address_content_setting']));
+        $address_content = sanitize_textarea_field($_POST['address_content_setting']);
+        set_theme_mod('address_content_setting', $address_content);
     }
 }
-
-
