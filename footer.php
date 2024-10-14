@@ -7,30 +7,14 @@
       
         <div class="footer_tekst">
 
-        <p class="font-bold mb-4">Studio Tavare AS</p><!-- /.font-700 -->
+        <p class="font-bold mb-4"><?php echo esc_html(get_theme_mod('address_title_setting', 'Default Title')); ?></p><!-- /.font-700 -->
 
-         <ul class="mb-8 sm:mb-4 font-light">
-            <li class="font-700">Besøksadresse:</li>
-             <li>Arkitektursamvirke</li>
-            <li>Myntgata 2 (inngang C), 0151 Oslo</li>
+         <p class="mb-8 sm:mb-4 font-light">
+         <?php echo wp_kses_post(get_theme_mod('address_content_setting', '')); ?>
 
-        </ul>
+        </p>
 
-        <ul class="mb-8 sm:mb-4 font-light">
-            <li class="font-700">Postadresse:</li>
-             <li>Fossveien 5, 0551 Oslo</li>
-            <li>Tlf: +47 472 43 140</li>
-             <li>Org.nr: 930 077 097</li>
-          
-         
-
- 
-
-
-               
-           
-           
-        </ul>
+        
 
         </div><!-- /.flex -->
        
