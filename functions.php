@@ -84,3 +84,32 @@ add_action('wp_enqueue_scripts', 'tavare_scripts');
 
 
 
+/* ==========================================================================
+Add Address Customizer Setting
+========================================================================== */
+
+function tavare_customize_register($wp_customize) {
+    
+    // Add a section in the customizer for the address
+    $wp_customize->add_section('address_section', array(
+        'title'      => __('Address Settings', 'tavare'),
+        'priority'   => 30,
+    ));
+
+    // Add the setting for the address field (with sanitization)
+    $wp_customize->add_setting('address_setting', array(
+        'default'           => '',
+        'sanitize_callback' => 'wp_kses_post', // Allows basic HTML like <p>, <br>, etc.
+    ));
+
+    // Add the control (input field) for the address
+    $wp_customize->add_control('address_setting', array(
+        'label'    => __('Enter Address', 'tavare'),
+        'section'  => 'address_section',
+        'settings' => 'address_setting',
+        'type'     => 'textarea', // This will create a textarea in the customizer
+    ));
+}
+
+add_action('customize_register', 'tavare_customize_register');
+
