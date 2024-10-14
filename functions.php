@@ -92,7 +92,7 @@ function tavare_customize_register($wp_customize) {
     
     // Add a section in the customizer for the address
     $wp_customize->add_section('address_section', array(
-        'title'      => __('Address Settings', 'tavare'),
+        'title'      => __('Addresse', 'tavare'),
         'priority'   => 30,
     ));
 
