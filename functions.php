@@ -25,6 +25,14 @@ if (!function_exists('base_setup')) {
                 'mobil_menu' => __('Mobile Menu'),
             )
         );
+
+        register_widget($addressWidget)
+        {
+            global $wp_widget_factory;
+
+            $wp_widget_factory->register($adressWidget);
+        }
+        
     }
 }
 
