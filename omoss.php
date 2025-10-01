@@ -19,6 +19,12 @@ Template Name: Om oss
    <?php endif; ?>
        
    <p class="mb-24"><?php the_field('vi_er_hovedtekst'); ?></p>
+   <div id="profiler">
+   
+
+  <p><?php the_field('portrett_tekst_kjersti'); ?></p>
+   <p><?php the_field('portrett_tekst_sunniva'); ?></p>
+</div>
 
     </div>
 
@@ -31,12 +37,7 @@ Template Name: Om oss
     </div><!-- /.flex -->
  
    
-<div id="profiler" class="sm:grid grid-cols-12 gap-8">
-   <img class="col-span-full lg:col-span-7 lg:col-start-6 mb-8" src="/wp-content/uploads/2023/02/studiotavare-1-scaled-1.jpg" alt="">
 
-  <p class="sm:col-span-6 lg:col-span-4 lg:col-start-4"><?php the_field('portrett_tekst_kjersti'); ?></p>
-   <div class="sm:col-span-6 lg:col-span-4 pt-24"><p><?php the_field('portrett_tekst_sunniva'); ?></p>
-</div><!-- /grid -->
    
 
 
