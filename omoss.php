@@ -18,7 +18,7 @@ Template Name: Om oss
    <img class="flex-1 lg:hidden" src="<?php the_field('portrett_bilde'); ?>" alt="">
    <?php endif; ?>
        
-   <p class="mb-24"><?php the_field('vi_er_hovedtekst'); ?></p>
+   <p class="mb-12"><?php the_field('vi_er_hovedtekst'); ?></p>
    <div id="profiler">
    
 
